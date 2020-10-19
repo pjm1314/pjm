@@ -3,11 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>布局</title>
+    <style>
+        .main{
+            border:10px solid pink;
+            text-align: center;
+        }
+        .top{
+            display:inline-block;
+            background-color:red;
+            width:1000px;
+            height:150px;
+
+        }
+        .title{
+            background-color:green;
+            height:50px;
+            line-height: 50px;
+        }
+        .menu {
+            background-color:blue;
+        }
+        .submenu {
+            display:inline-block;
+            background-color:purple;
+            width:150px;
+            height:100px;
+            line-height: 100px;
+            text-align: center;
+            margin:0 20px;
+        }
+        .container{
+            border: 10px solid pink;
+            text-align: center;
+        }
+        .menuwrap{
+            display:inline-block;
+            background-color:red;
+            width:1000px;
+            height:150px;
+        }
+        .con{
+            display:inline-block;
+            background-color:purple;
+            width:150px;
+            height:100px;
+            line-height: 100px;
+            text-align: center ;;
+            margin:0 20px;
+        }
+        .onfoot{
+            border:10px solid pink;
+            text-align: center;
+        }
+        .ad{
+            display:inline-block;
+            background-color:purple;
+            width:300px;
+            height:65px;
+            line-height: 100px;
+            text-align: left;
+            margin:0 20px;
+        }
+    </style>
 </head>
 <body>
-    <div id="container" style="width: 1000px; height: 150px;"><h1 style="margin-bottom: 0;">江西软件职业技术大学</h1>
-    
+   <div class="main">
+        <div class="top">
+            <div class="title">
+                江西软件职业技术大学
+            </div>
+            <div class="menu">
+                <div class="submenu">学校概况</div>
+                <div class="submenu">新闻中心</div>
+                <div class="submenu">机构设置</div>
+                <div class="submenu">师资队伍</div>
+                <div class="submenu">联系我们</div>
+            </div>
+        </div>
+   </div>
+    <div class="container">
+        <div class="menuwrap">
+            <div class="con">软件工程学院</div>
+            <div class="con">网络工程学院</div>
+            <div class="con">信息技术学院</div>
+        </div>
+        <div class="menuwrap">
+            <div class="con">经济管理学院</div>
+            <div class="con">区块链学院</div>
+            <div class="con">VR与艺术学院</div>
+        </div>
+        <div class="menuwrap">
+            <div class="con">新媒体学院</div>
+            <div class="con">国际学院</div>
+            <div class="con">软件工程学院</div>
+        </div>
+
+    </div>
+    <div class="onfoot">
+        <div class="menuwrap">
+            <div class="ad">学校地址江西省南昌市先锋创客小镇</div>
+            <br>
+            <div class="ad">邮编:330041</div>
+        </div>
     </div>
 </body>
 </html>
