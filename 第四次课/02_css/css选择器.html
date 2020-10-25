@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        id选择器:
+            作用:根据元素的id属性值选中一个元素
+            语法:#id属性值()
+            例子:#box{}
+        类选择器:
+            作用:根据元素的class属性值选中一组元素
+            语法:.class属性值
+        通配选择器: 
+            作用:选中页面中的所有元素
+            语法:*   
+         */
+        #red{
+            color: green;
+        }
+        .blue{
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="blue abc">标题</h1>
+    <p>别人笑我太疯颠</p>
+    <p id="red">我笑他人看不穿</p>
+    <!-- class是一个标签的属性,他和id类似,不同的是class可以重复使用
+    可以通过class属性来为元素分组
+    可以同时为一个元素指定多个class属性
+    -->
+    <p class="blue">不见武林豪杰墓</p>
+    <p class="blue">无花无酒锄作田</p>
+</body>
+</html>
