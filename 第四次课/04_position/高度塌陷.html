@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        BFC:块级格式化环境,开启BFC该元素会变成一个独立的布局区域
+            开启后的特点:   
+                1.不会被浮动元素覆盖
+                2.子元素和的父元素边距不会重叠
+                3.可以办韩福东的子元素
+            特殊方式开启BFC
+                1.设置元素浮动
+                2.将元素设为行内块元素
+                3.将元素overflow设置为非visible的值
+         */
+        .outer{
+            border: 10px solid red;
+            /* float: left; */
+            overflow: hidden;           
+        }
+        .inner{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            /* float: left; */
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+</body>
+</html>

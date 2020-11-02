@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bbffaa;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        行内元素:
+                a - 锚点
+                select - 项目选择
+                span - 常用内联容器，定义文本内区块
+                strong - 粗体强调
+                img - 图片
+                input - 输入框
+                label - 表格标签
+                br - 换行
+        块级元素:
+                div
+                ul ,li 非排序列表
+                form - 交互表单
+                table - 表格
+                h1 -h6 标题
+                p - 段落
+                address - 地址
+                blockquote - 块引用
+         块级元素和内联元素之间的转换：
+                1.display
+                块元素默认display:block;行内非替换元素(a,span)默认为display：inline;行内替换元素(input)默认为display:inline-block;
+                a.display:none;不显示该元素，也不会保留该元素原先占有的文档流位置。
+                b.display:block;转换为块级元素。
+                c.display:inline;转换为行内元素。
+                d.display:inline-block;转换为行内块级元素。
+     -->
+     <span style="width: 200px; height: 200px; display:inline-block;">我是<strong>span</strong> 元素</span>
+     <div class="box1"></div>
+
+
+</body>
+</html>

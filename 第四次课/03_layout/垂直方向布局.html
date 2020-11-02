@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 默认情况下父元素的高度被内容撑开 */
+        .outer{
+            background-color: #bfa;
+            /* position: relative; */
+            width: 300px;
+            height: 200px;
+            
+        }
+        .inner1{
+            width: 100px;
+            height: 200px;
+            background-color: yellow;
+            margin-left: 50px;
+            display: inline-block;
+            
+
+        }
+        /* 
+        使用overflow属性来设置父元素如何处理溢出的元素
+            可选值:
+                visible:默认值会从父元素中溢出,在父元素外部的位置显示
+                hidden:溢出的内容会被裁剪不会被显示
+                scroll:生成两个滚动条,通过滚动条来查看完整的内容
+                auto:根据需要生成滚动条
+         */
+        .inner2{
+            width: 100px;
+            height: 200px;
+            background-color: black;
+            display: inline-block;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner1"></div>
+        <div class="inner2"></div>
+    </div>
+</body>
+</html>

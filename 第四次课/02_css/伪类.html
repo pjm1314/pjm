@@ -9,7 +9,7 @@
         伪类(不存在的类,特殊的类)
             -伪类用来描述一个元素的特殊状态
                 比如:第一个元素,被点击的元素,鼠标移动的元素...
-            -伪类一般情况下都是使用:开头
+            -伪类一般情况下都是使用::开头
                 :first-child第一个子元素
                 :last-child最后一个子元素
                 :nth-child()选中第某n个子元素
@@ -46,6 +46,19 @@
         ul>li:not(:nth-of-type(3)){
             color: red;
         }
+        div:first-child{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin-top: 100px;
+        }
+        div:last-child{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin-top: 100px;
+        }
+        
     </style>
 </head>
 <body>
@@ -57,5 +70,11 @@
         <li>4</li>
         <li>5</li>
     </ul>
+    <div>
+        <!-- <div class="1"></div>
+        <div class="2"></div> -->
+    </div>
+    <div></div>
+    
 </body>
 </html>

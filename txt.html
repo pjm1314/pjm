@@ -1,6 +1,59 @@
-<html>	
-	<head>
-		<title>我的第一个网页</title>
-	</head>
-	<body><font color="red">第一个网页</font></body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		div{
+			width: 200px;
+			height: 200px;
+			font-size: 60px;
+			background-color: purple;
+		}
+		/* body>div:first-child{
+			width: 200px;
+			height: 200px;
+			background-color: blue;
+			margin:100px;
+			position: absolute;
+		}
+		div:nth-child(n){
+			background-color: red;
+			width: 200px;
+			height: 200px;
+			margin-top: 50px;
+			position: absolute;
+		} */
+		/* body>div:first-child{
+			margin: 100px;
+		} */
+		/* body>div:first-child{
+			margin: 0px;
+			background-color: red;
+		}
+		/* body>div:last-of-type{
+			background-color: blue;
+			margin: 50px;
+		} */
+		
+		/* body>div:last-child{
+			background-color: blue;
+			margin: 0px;
+		}  */
+		div>div:first-child{
+			background-color: blue;
+		}
+		div>div:last-child{
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<div >
+		<div>1</div>
+		<div >2</div>
+	</div>
+	<!-- <div >2</div> -->
+</body>
 </html>
