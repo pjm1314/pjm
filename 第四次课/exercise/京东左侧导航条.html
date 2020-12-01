@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img-list{
+            margin: 100px auto;
+            height: 200px;
+            width: 200px;
+
+        }
+        .pic{
+            width: 200px;
+            height: 200px;
+            
+        }
+        .img-list li{
+            position: absolute;
+        }
+        /* 通过修改元素的层级来显示指定的图片 */
+        .pointer a{
+            /* display: block; */
+            float: left;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-left: 4px;
+            background-color:whitesmoke;
+            background-clip: content-box;
+            /*  将背景颜色设置到内容区,边框和内边距不再有背景颜色*/
+        }
+        .pointer{
+            position: absolute;
+            z-index: 9999;
+            bottom: 10px;
+        }
+        .img-list{
+            position: relative;
+        }
+        .pointer a.active,
+        .pointer a:hover{
+            background-color: #ffffff;
+            /* border: 2px solid transparent; */
+        }
+        #button:active{
+            background-color: aquamarine;
+        }
+       
+    </style>
+</head>
+<body>
+    <ul class="img-list">
+        <li><a href="javascript:;"><img src="0c4d205e3c670a3c9bda190c50bff1fa.jpeg" alt="" class="pic" id="c1"></a></li>
+        <li><a href="javascript:;"><img src="a3b3f3d45bed72792a21caa4e2b3c813.jpg" alt="" class="pic"></a></li>
+        <li><a href="javascript:;"><img src="cf46bab73874b17e6f7c8cb4fccf305f.png" alt="" class="pic"></a></li>
+        <li><a href="javascript:;"><img src="efb42f528aa034fe274223adec60d591.jpeg" alt="" class="pic"></a></li>
+        <div class="pointer">
+            <a href="#c1" class="active" id="button"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+        </div>
+    </ul>
+</body>
+</html>

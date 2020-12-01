@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 500px;
+            
+            background-color: aquamarine;
+            /* 
+            出发BFC清除浮动
+            overflow: hidden; 
+            
+            */
+            
+        }
+        .box1:after{
+            /* 最好加个点 ，防旧版本会产生空隙*/
+            content: '.';
+            display: block;
+            visibility: hidden;
+            height: 0;
+            clear: both;
+        }
+        .one{
+            width: 100px;
+            height: 100px;
+            background-color: blanchedalmond;
+            float: left;
+        }
+        .two{
+            width: 200px;
+            height: 200px;
+            background-color: chartreuse;
+            float: left;
+        }
+        .box2{
+            width: 500px;
+            height: 200px;
+            background-color: chocolate;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="one"></div>
+        <div class="two"></div>
+    </div>
+    <div class="box2"></div>
+</body>
+</html>

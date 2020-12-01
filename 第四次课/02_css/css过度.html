@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrapper{
+            width: 50px;
+            height: 50px;
+            background-color: #bbffaa;
+            border: 10px solid orangered;
+        }
+        #wrapper:hover{
+            width: 500px;
+            height: 300px;
+            /* 
+            transition 属性是一个简写属性，用于设置四个过渡属性：
+                transition-property     规定设置过渡效果的 CSS 属性的名称。
+                ransition-duration     规定完成过渡效果需要多少秒或毫秒。
+                transition-timing-function     规定速度效果的速度曲线。
+                transition-delay           定义过渡效果何时开始。
+             */
+            transition: all ease 5s 3s;
+        }
+    </style>
+    
+</head>
+<body onload="init()">
+    <div id="wrapper"></div>
+    <script>
+        function init(){
+            var target=window.document.getElementById("wrapper");
+        target.style.backgroundColor="blue"
+        }
+        var apple=20;
+        var lemon="柠檬";
+        var banana=true;
+        var pear=null;
+        var orange=undefined;
+        var peach=function peachSum(){
+
+        }
+        var watermellon={}
+        
+    </script>
+    <!-- 
+
+        js声明变量:
+            var
+            let
+            const
+     -->
+</body>
+</html>

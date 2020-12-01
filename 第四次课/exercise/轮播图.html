@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .size{
+            width: 200px;
+            height: 200px;
+            float: left;
+        }
+        #label{
+            position: absolute;
+            top: 195px;
+            z-index: 9999;
+        }
+        .dian{
+            width: 4px;
+            height: 4px;
+            background-color: bisque;
+            border: 2px solid whitesmoke;
+            border-radius: 50%;
+            float: left;
+            margin-left: 4px;
+        }
+        .dian:active{
+            background-color: turquoise;
+        }
+      
+        #change2{
+            display: none;
+        }
+        #change3{
+            display: none;
+        }
+        #change4{
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="change1">
+         <img src="1.jpeg" alt="" class="size">
+    </div>
+    <div id="change2">
+         <img src="2.jpeg" alt="" class="size">
+    </div>
+    <div id="change3">
+        <img src="3.jpg" alt="" class="size">
+    </div>
+    <div id="change4">
+         <img src="4.png" alt="" class="size">
+    </div>
+    <div id="label">
+        <a href="#change1" class="dian"></a>
+        <a href="#change2" class="dian"></a>
+        <a href="#change3" class="dian"></a>
+        <a href="#change4" class="dian"></a>
+    </div>
+</body>
+</html>
