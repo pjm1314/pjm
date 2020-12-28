@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 600px;
+            height: 600px;
+            background-color: aquamarine;
+            /* 
+            background-image设置背景图片
+                -如果背景的图片小于元素，则背景图片会自动在元素中平铺将元素铺满
+             */
+            background-image: url(../字体背景/爱宠01.png);
+            /* background-repeaty用来设置背景的重复方式，可选值：
+                -repeat默认值，背景会沿下x，y方向重复
+                -repeat-x，y 沿x，y轴方向重复y
+                -no-repea 背景图片不重复
+            
+             */
+             background-repeat: no-repeat;
+             /* 
+             background-position:用来设置图片位置
+             使用时要同时设置两个值
+              */
+             /* background-position: center; */
+             /* 
+             background-clip:设置背景的范围,可选值
+                border-box 默认值，出现在边框的下边
+                padding-box 背景不会出现在边框，只出现在内容区和内边距
+                content-box 背景只会出现在内容区
+             
+              */
+              padding: 10px;
+              border: 10px double red;
+              background-clip:content-box ;
+              /* 
+               background-origin:背景图片偏移量计算的原点
+                    padding-box 默认值，从内边距开始计算
+                    content-box 从内容区计算
+                    border-box 从边框开始
+               */
+               background-origin:content-box ;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    
+</body>
+</html>

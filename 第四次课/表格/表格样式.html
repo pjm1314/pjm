@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 50%;
+            border: 1px solid black;
+            margin: 0 auto;
+            /* 
+            border-spacing:指定边框的距离
+             */
+            border-spacing: 1px;
+            /* 
+            border-collapse: collapse;设置边框的合并
+             */
+            border-collapse: collapse;
+        }
+        td{
+            border: 1px solid black;
+            text-align: center;
+        }
+        /* 
+        如果表格中没有使用tbody而是直接用tr那么浏览器会自动创建一个tbody，并且将tr全部放到tr不是table的子元素
+         */
+        tr:nth-child(2n){
+            background-color: #bfa;
+        }
+        .box1{
+            width: 300px;
+            height: 300px;
+            background-color: chocolate;
+            /* 将元素设置为单元格 */
+            display: table-cell;
+            vertical-align: middle;
+
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color:cornflowerblue;
+            margin: 0 auto;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+    <table>
+        <tr>
+            <td>学号</td>
+            <td>姓名</td>
+            <td>性别</td>
+            <td>年龄</td>
+            <td>住址</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>猪八戒</td>
+            <td>男</td>
+            <td>300</td>
+            <td>高老庄</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>孙悟空</td>
+            <td>男</td>
+            <td>300</td>
+            <td>水帘洞</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>沙僧</td>
+            <td>男</td>
+            <td>300</td>
+            <td>流沙河</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>猪八戒</td>
+            <td>男</td>
+            <td>300</td>
+            <td>高老庄</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>孙悟空</td>
+            <td>男</td>
+            <td>300</td>
+            <td>水帘洞</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>沙僧</td>
+            <td>男</td>
+            <td>300</td>
+            <td>流沙河</td>
+        </tr>
+    </table>
+</body>
+</html>

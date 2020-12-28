@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            /* background-color: #bbffaa; */
+            /* 
+            通过渐变可以设置一些复杂的背景颜色，以实现从一个颜色向其他颜色过滤的效果
+            渐变是图片，通过background-image设置
+                linear-gradient(1,2)1在开头，2在结尾，中间是过滤区域
+            -线性渐变的开头
+                to right
+                to left
+                to bottom
+                to top
+                xxxdeg deg表示度数
+            -渐变可以指定多个颜色，默认情况平均分配
+             */
+             background-image: linear-gradient(to right,red,yellow,orange,#bfa);
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-image: repeating-linear-gradient(red 50px,yellow 100px);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>
